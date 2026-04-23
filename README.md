@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Viagens — Portal de Destinos
 
-## Getting Started
+Projeto desenvolvido como parte da **Atividade 15** do curso de **Front-end da EBAC** (Escola Britânica de Artes Criativas).
 
-First, run the development server:
+## Sobre o projeto
+
+Portal de viagens que lista destinos turísticos e exibe informações detalhadas sobre cada um em páginas individuais. O objetivo foi aplicar na prática os principais conceitos do Next.js com App Router.
+
+## Tecnologias utilizadas
+
+- [Next.js 15](https://nextjs.org/) com App Router
+- [TypeScript](https://www.typescriptlang.org/)
+- CSS Modules
+- Google Fonts (Playfair Display + Lora)
+- Next.js Image e Link
+
+## Conceitos aplicados
+
+- Rotas baseadas em arquivos com App Router
+- Rotas dinâmicas com `[id]` e `generateStaticParams`
+- Componentes reutilizáveis (`Layout`, `CardDestino`)
+- Tipagem com `interface` TypeScript
+- Estilização com CSS Modules
+- Navegação com `next/link`
+- Otimização de imagens com `next/image`
+
+## Estrutura de pastas
+
+src/
+├── app/
+│   ├── layout.tsx
+│   ├── globals.css
+│   ├── page.tsx
+│   ├── page.module.css
+│   └── destinos/
+│       ├── page.tsx
+│       ├── page.module.css
+│       └── [id]/
+│           ├── page.tsx
+│           └── page.module.css
+├── components/
+│   ├── Layout/
+│   │   ├── Layout.tsx
+│   │   └── Layout.module.css
+│   └── CardDestino/
+│       ├── CardDestino.tsx
+│       └── CardDestino.module.css
+├── data/
+│   └── destinos.ts
+└── types/
+└── destino.ts
+
+
+## Páginas
+
+| Rota | Descrição |
+|------|-----------|
+| `/` | Página inicial com hero e apresentação do portal |
+| `/destinos` | Listagem de todos os destinos em grid |
+| `/destinos/[id]` | Página individual de cada destino |
+
+## Como rodar o projeto
+
+**Pré-requisitos:** Node.js 18+
 
 ```bash
+# Clonar o repositório
+git clone https://github.com/zzfariaszz/portal-de-viagens.git
+
+# Entrar na pasta
+cd atividade15
+
+# Instalar dependências
+npm install
+
+# Rodar em desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse `http://localhost:3000` no navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Destinos incluídos
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Kyoto — Japão
+- Patagônia — Argentina / Chile
+- Marrakech — Marrocos
+- Santorini — Grécia
+- Hanói — Vietnã
+- Islândia
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Desenvolvido por **Felipe** · aluno EBAC
