@@ -1,6 +1,6 @@
 # Viagens — Portal de Destinos
 
-Projeto desenvolvido como parte da **Atividade 15** do curso de **Front-end da EBAC** (Escola Britânica de Artes Criativas).
+Projeto desenvolvido como parte do curso de **Front-end da EBAC** (Escola Britânica de Artes Criativas).
 
 ## Sobre o projeto
 
